@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.word_dictionary.DictionaryPageController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+
+        <ImageView fitHeight="500" fitWidth="500">
+            <image>
+                <Image url ="@background.png"/>
+            </image>
+        </ImageView>
+
+        <Text layoutX="100.0" layoutY="130.0" text = "Search a word!">
+            <font>
+                <Font size = "15.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="search" layoutX="100.0" layoutY="140.0" minHeight="20" minWidth="100" promptText = "Search"> </TextField>
+        <Button layoutX="300" layoutY="140" text="Search" onMouseClicked="#searchButton"> </Button>
+
+        <Text layoutX="100.0" layoutY="220.0" text = "Add a new word">
+            <font>
+                <Font size = "15.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="newword" layoutX="100.0" layoutY="235.0" minHeight="20" minWidth="100" promptText = "Add a new word"> </TextField>
+        <TextField fx:id="meaning" layoutX="100.0" layoutY="270.0" minHeight="20" minWidth="100" promptText = "Enter its meaning"> </TextField>
+        <Button layoutX="300" layoutY="250" text="Add" onMouseClicked="#Add"> </Button>
+
+        <Text layoutX="100.0" layoutY="360.0" text="Find Meaning">
+            <font>
+                <Font size = "15.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="findword" layoutX="100.0" layoutY="370.0" minHeight="20" minWidth="100" promptText = "Enter a word"> </TextField>
+        <Button layoutX="300" layoutY="370" text="Find" onMouseClicked="#Meaning"> </Button>
+
+    </children>
+
+</AnchorPane>
